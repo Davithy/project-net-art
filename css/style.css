@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+}
+
+.begin {
+    background: black;
+    margin: 0;
+}
+
+.choices {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.colorshift {
+    background: rgb(128, 128, 128);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+.colorshift.beginning {
+    background: black;
+}
+
+.finale {
+    margin-bottom: 2.1em;
+}
+
+.end {
+    margin: 10px;
+    background: white;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.end a {
+    color: black;
+    text-decoration: none;
+}
+
+/* button design AND animation */
+
+.button {
+    color: transparent; /* change back to transparent don't forget */
+    background-color: white;
+    padding: 5em;
+    width: 1em;
+    border-radius: 50%;
+    transition: all .3s;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.button:hover {
+    transform: scale(1.25);
+}
+
+#option1{background-color: rgb(255, 0, 255);}
+#option34{background-color: rgb(255, 8, 248);}
+#option18{background-color: rgb(255, 16, 240);}
+#option35{background-color: rgb(255, 24, 232);}
+#option10{background-color: rgb(255, 32, 224);}
+#option36{background-color: rgb(255, 40, 216);}
+#option19{background-color: rgb(255, 48, 208);}
+#option37{background-color: rgb(255, 56, 200);}
+#option6{background-color: rgb(255, 64, 192);}
+#option38{background-color: rgb(255, 72, 184);}
+#option20{background-color: rgb(255, 80, 176);}
+#option39{background-color: rgb(255, 88, 168);}
+#option11{background-color: rgb(255, 96, 160);}
+#option40{background-color: rgb(255, 104, 152);}
+#option21{background-color: rgb(255, 112, 144);}
+#option41{background-color: rgb(255, 120, 136);}
+#option4{background-color: rgb(255, 128, 128);}
+#option42{background-color: rgb(255, 136, 120);}
+#option22{background-color: rgb(255, 144, 112);}
+#option43{background-color: rgb(255, 152, 104);}
+#option12{background-color: rgb(255, 160, 96);}
+#option44{background-color: rgb(255, 168, 88);}
+#option23{background-color: rgb(255, 176, 80);}
+#option45{background-color: rgb(255, 184, 72);}
+#option7{background-color: rgb(255, 192, 64);}
+#option46{background-color: rgb(255, 200, 56);}
+#option24{background-color: rgb(255, 208, 48);}
+#option47{background-color: rgb(255, 216, 40);}
+#option13{background-color: rgb(255, 224, 32);}
+#option48{background-color: rgb(255, 232, 24);}
+#option25{background-color: rgb(255, 240, 16);}
+#option49{background-color: rgb(255, 248, 8);}
+#option2{background-color: rgb(255, 255, 0);}
+#option50{background-color: rgb(248, 255, 8);}
+#option26{background-color: rgb(240, 255, 16);}
+#option51{background-color: rgb(232, 255, 24);}
+#option14{background-color: rgb(224, 255, 32);}
+#option52{background-color: rgb(216, 255, 40);}
+#option27{background-color: rgb(208, 255, 48);}
+#option53{background-color: rgb(200, 255, 56);}
+#option8{background-color: rgb(192, 255, 64);}
+#option54{background-color: rgb(184, 255, 72);}
+#option28{background-color: rgb(176, 255, 80);}
+#option55{background-color: rgb(168, 255, 88);}
+#option15{background-color: rgb(160, 255, 96);}
+#option56{background-color: rgb(152, 255, 104);}
+#option29{background-color: rgb(144, 255, 112);}
+#option57{background-color: rgb(136, 255, 120);}
+#option5{background-color: rgb(128, 255, 128);}
+#option58{background-color: rgb(120, 255, 136);}
+#option30{background-color: rgb(112, 255, 144);}
+#option59{background-color: rgb(104, 255, 152);}
+#option16{background-color: rgb(96, 255, 160);}
+#option60{background-color: rgb(88, 255, 168);}
+#option31{background-color: rgb(80, 255, 176);}
+#option61{background-color: rgb(72, 255, 184);}
+#option9{background-color: rgb(64, 255, 192);}
+#option62{background-color: rgb(56, 255, 200);}
+#option32{background-color: rgb(48, 255, 208);}
+#option63{background-color: rgb(40, 255, 216);}
+#option17{background-color: rgb(32, 255, 224);}
+#option64{background-color: rgb(24, 255, 232);}
+#option33{background-color: rgb(16, 255, 240);}
+#option65{background-color: rgb(8, 255, 248);}
+#option3{background-color: rgb(0, 255, 255);}
