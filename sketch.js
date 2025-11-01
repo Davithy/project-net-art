@@ -9,7 +9,6 @@ function loadBackground() {
 
   if (saved) {
     const color = JSON.parse(saved);
-    console.log('Loading saved color:', color);
 
     const colorshift = document.querySelector('.colorshift');
     colorshift.style.backgroundColor = `rgba(${color.r}, ${color.g}, ${color.b}, ${color.a})`;
@@ -20,7 +19,6 @@ window.addEventListener('load', function () {
   const page = window.location.pathname;
   if (page.includes('index.html')) {
     sessionStorage.removeItem('myColor');
-    console.log('Reset colors');
   }
 
   const buttons = document.querySelectorAll('.button');
@@ -32,15 +30,12 @@ window.addEventListener('load', function () {
       }
 
       const buttonColor = window.getComputedStyle(this).backgroundColor;
-      console.log('Clicked button color:', buttonColor);
 
       const cleaned = buttonColor.replace('rgb(', '').replace(')', '');
       const parts = cleaned.split(', ');
       const newR = parseInt(parts[0]);
       const newG = parseInt(parts[1]);
       const newB = parseInt(parts[2]);
-
-      console.log('RGB values:', newR, newG, newB);
 
       const saved = sessionStorage.getItem('myColor');
       let finalR, finalG, finalB, finalA;
@@ -51,13 +46,11 @@ window.addEventListener('load', function () {
         finalG = Math.round((old.g + newG) / 2);
         finalB = Math.round((old.b + newB) / 2);
         finalA = old.a + 0.125;
-        console.log('Averaged color:', finalR, finalG, finalB, finalA);
       } else {
         finalR = newR;
         finalG = newG;
         finalB = newB;
         finalA = 0.125;
-        console.log('First color:', finalR, finalG, finalB, finalA);
       }
 
       sessionStorage.setItem('myColor', JSON.stringify({
